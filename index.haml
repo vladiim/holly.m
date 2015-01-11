@@ -1,12 +1,5 @@
 !!! 5
 
--# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-
--# <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
--# <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
--# <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
--# <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-
 %html.no-js{:lang => "en"}
 
   %head
@@ -19,91 +12,26 @@
 
     %title
     %meta{:name => "description", :content => ""}
-    -# %meta{:name => "keywords", :content => ""}
-    -# %meta{:name => "author", :content => ""}
 
     -# Mobile
     -# ==========================================================================
 
     %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
-    -# %meta{:name => "HandheldFriendly", :content => "True"}
-    -# %meta{:name => "MobileOptimized", :content => "320"}
-
-    -# iOS web app
-
-    -# %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
-    -# %meta{:name => "apple-mobile-web-app-status-bar-style", :content => "black"}
-    -# %link{:rel => "apple-touch-startup-image", :href => "/img/touch/startup.png"}
-
-    -# RSS
-    -# ==========================================================================
-
-    -# %link{:rel => "alternate", :type => "application/rss+xml", :title => "RSS", :href => "http://feeds.feedburner.com/FEEDNAME"}
 
     -# Favicon
     -# ==========================================================================
 
     %link{:href => "/favicon.ico", :rel => "shortcut icon"}
 
-    -# iPad 3 Retina Display
-
-    -# %link{:rel => "apple-touch-icon-precomposed", :sizes => "144x144", :href => "/img/touch/apple-touch-icon-144x144-precomposed.png"}
-
-    -# iPhone 4 Retina display
-
-    -# %link{:rel => "apple-touch-icon-precomposed", :sizes => "114x114", :href => "/img/touch/apple-touch-icon-114x114-precomposed.png"}
-
-    -# iPad non-Retina display
-
-    -# %link{:rel => "apple-touch-icon-precomposed", :sizes => "72x72", :href => "/img/touch/apple-touch-icon-72x72-precomposed.png"}
-
-    -# Non-Retina iPhone, iPod Touch, Android 2.1+
-
-    -# %link{:rel => "apple-touch-icon-precomposed", :href => "/img/touch/apple-touch-icon-57x57-precomposed.png"}
-
-    -# Nokia
-
-    -# %link{:rel => "shortcut icon", :href => "/img/touch/apple-touch-icon.png"}
-
     -# CSS
     -# ==========================================================================
 
-    %link{:rel => "stylesheet", :href => "/css/base.css"}
-    -# %link{:rel => "stylesheet", :media => "only screen and (min-width: 45em)", :href => "/css/widescreen.css"}
+    %link{:rel => "stylesheet", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" }
+    %style
+      = ".folio-list-item {cursor: pointer;}"
+      = ".folio-list-item > .panel-body > img {width: 100%;}"
+      = ".modal-body > img {width: 100%;}"
 
-    -# IE Fixes
-    -# ==========================================================================
-
-    -#
-    -# Use HTML5 Shim polyfill if not using Modernizr
-    -# Compiled IE stylesheets for legacy IE "Mobile first" support (using SASS)
-    -# nicolasgallagher.com/mobile-first-css-sass-and-ie/
-    -#
-
-    -# /[if (lt IE 9) & (!IEMobile)]
-        -# %script{:src => "//html5shim.googlecode.com/svn/trunk/html5.js"}
-        %script{:src => "/js/libs/selectivizr.min.js"}
-        -# %link{:rel => "stylesheet", :href => "/css/oldie.css"}
-        -# %link{:rel => "stylesheet", :href => "/css/ie8.css"}
-
-    -# [if (lt IE 8) & (!IEMobile)]
-        %link{:rel => "stylesheet", :href => "/css/ie7.css"}
-
-    -# [if IE 6 & (!IEMobile)]
-        %link{:rel => "stylesheet", :href => "/css/ie6.css"}
-
-    -# JS
-    -# ==========================================================================
-
-    -# Typekit - change XXXXXXX to be your site's Typekit Kit ID
-
-    -# %script{:src => "http://use.typekit.com/XXXXXXX.js"}
-    -# :javascript
-        try{Typekit.load();}catch(e){}
-
-    -# Modernizr
-
-    -# %script{:src => "/js/libs/modernizr.custom.js"}
 
   %body
 
@@ -111,16 +39,47 @@
     -# Content
     -# ==========================================================================
 
-    %h1 Holly's Website
+    .container
+      .row
+        %h1 Holly's Website
+
+      .row
+
+        - 1.upto(10).each do |n|
+
+          .col-sm-3
+            .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ n }" }
+              .panel-heading
+                = "Title #{ n }"
+              .panel-body
+                %img{ src: 'http://www.naturepictures.co/wp-content/uploads/2014/08/night_landscape2.jpg' }
+                %p Some copy to go with it.
+                .meta
+                  %small Fashion | Jan 2012
+
+    -# ==========================================================================
+    -# Modals
+    -# ==========================================================================
+
+    - 1.upto(10).each do |n|
+
+      .modal.fade{ id: "modal-#{ n }" }
+        .modal-dialog
+          .modal-content
+            .modal-header
+              %button{ class: 'close', 'data-dismiss' => 'modal' } &times;
+              %h3.modal-title= "Title #{ n }"
+            .modal-body
+              %img{ src: 'http://www.naturepictures.co/wp-content/uploads/2014/08/night_landscape2.jpg' }
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
     -# JS
     -# ==========================================================================
 
     -# jQuery
 
-    -# %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
-    -# :javascript
-        window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"}
+    %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"}
 
     -# Custom JS
 
