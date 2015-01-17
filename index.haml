@@ -30,7 +30,7 @@
     %style
       = ".folio-list-item {cursor: pointer;}"
       = ".folio-list-item > .panel-body > img {width: 100%;}"
-      = ".modal-body > img {width: 100%;}"
+      = ".modal-body img {width: 100%;}"
 
 
   %body
@@ -41,58 +41,51 @@
 
     .container
       .row
-        %h1 Holly's Website
+        %h1 Holly Mehakovic Folio
+
+      .hr
 
       .row
 
-        - 1.upto(10).each do |n|
-
+        - folio.each do |item|
           .col-sm-3
-            .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ n }" }
-              .panel-heading
-                = "Title #{ n }"
+            .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ item.title.downcase.gsub(' ', '-') }" }
+              .panel-heading= item.title
               .panel-body
-                %img{ src: 'http://www.naturepictures.co/wp-content/uploads/2014/08/night_landscape2.jpg' }
-                %p Some copy to go with it.
+                %img{ src: "#{ item.image }" }
+                %p= item.description
                 .meta
-                  %small Fashion | Jan 2012
+                  %small= "#{ item.category } | #{ item.date }"
 
     -# ==========================================================================
     -# Modals
     -# ==========================================================================
 
-    - 1.upto(10).each do |n|
-
-      .modal.fade{ id: "modal-#{ n }" }
+    - folio.each do |item|
+      .modal.fade{ id: "modal-#{ item.title.downcase.gsub(' ', '-') }" }
         .modal-dialog
           .modal-content
             .modal-header
               %button{ class: 'close', 'data-dismiss' => 'modal' } &times;
-              %h3.modal-title= "Title #{ n }"
+              %h3.modal-title= item.title
             .modal-body
-              %img{ src: 'http://www.naturepictures.co/wp-content/uploads/2014/08/night_landscape2.jpg' }
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+              %img{ src: "#{ item.image }" }
+              %p= item.body
     -# JS
     -# ==========================================================================
 
-    -# jQuery
+    -# jQuery & Bootstrap
 
     %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"}
     %script{:src => "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"}
 
-    -# Custom JS
+    -# GTM
 
-    -# %script{:src => "/js/app.js"}
-
-    -#
-    -# Asynchronous Google Analytics
-    -# Change UA-XXXXX-X to be your site's ID
-    -# mathiasbynens.be/notes/async-analytics-snippet
-    -#
-
-    -# :javascript
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
+    %noscript
+      %iframe{ src: "//www.googletagmanager.com/ns.html?id=GTM-K33RKC", height: "0", width: "0", style: "display:none;visibility:hidden"}
+    %script
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K33RKC')

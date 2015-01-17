@@ -1,12 +1,22 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    byebug (3.5.1)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
+      slop (~> 3.6)
+    columnize (0.9.0)
+    debugger-linecache (1.2.0)
     haml (4.0.6)
       tilt
+    redcarpet (3.2.2)
+    slop (3.6.0)
     tilt (2.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   haml
+  redcarpet
