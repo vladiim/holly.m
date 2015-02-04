@@ -1,5 +1,5 @@
 ----
-title: The title
+title: The new title
 description: The description
 date: Jan 2012
 category: Fashion
