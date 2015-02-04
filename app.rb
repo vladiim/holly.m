@@ -23,7 +23,12 @@ class App
   end
 
   def folio
-    [Parser.new("#{ Dir.pwd }/folio/test.md").data]
+    Dir["#{ Dir.pwd }/folio/*"].each.inject([]) do |folio, file|
+      folio << Parser.new(file).data
+      folio
+    end
+
+    # [Parser.new("#{ Dir.pwd }/folio/test.md").data]
   end
 end
 

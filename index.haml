@@ -31,6 +31,7 @@
       = ".folio-list-item {cursor: pointer;}"
       = ".folio-list-item > .panel-body > img {width: 100%;}"
       = ".modal-body img {width: 100%;}"
+      = ".jumbotron {margin-top: 5px; padding: 5px}"
 
 
   %body
@@ -40,19 +41,20 @@
     -# ==========================================================================
 
     .container
-      .row
+      .jumbotron
         %h1 Holly Mehakovic Folio
+        %p A selection of work.
 
       .hr
 
       .row
 
         - folio.each do |item|
-          .col-sm-3
-            .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ item.title.downcase.gsub(' ', '-') }" }
+          .col-md-3
+            .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-') }" }
               .panel-heading= item.title
               .panel-body
-                %img{ src: "#{ item.image }" }
+                %img{ src: "/images/#{ item.image }" }
                 %p= item.description
                 .meta
                   %small= "#{ item.category } | #{ item.date }"
@@ -62,14 +64,14 @@
     -# ==========================================================================
 
     - folio.each do |item|
-      .modal.fade{ id: "modal-#{ item.title.downcase.gsub(' ', '-') }" }
+      .modal.fade{ id: "modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-') }" }
         .modal-dialog
           .modal-content
             .modal-header
               %button{ class: 'close', 'data-dismiss' => 'modal' } &times;
               %h3.modal-title= item.title
             .modal-body
-              %img{ src: "#{ item.image }" }
+              %img{ src: "/images/#{ item.image }" }
               %p= item.body
     -# JS
     -# ==========================================================================
