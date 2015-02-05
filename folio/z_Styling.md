@@ -1,6 +1,6 @@
 ----
 title: Styling
-description: Trend pieces: a selection of print published product page tearsheets and lookbook shoots
+description: Trend pieces: a selection of print published product page tearsheets and lookbook shoots.
 date: 2010 - 2011
 category: Photography | Advertorial | Interiors
 image: main_styling.jpg 

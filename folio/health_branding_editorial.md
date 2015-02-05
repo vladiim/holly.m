@@ -1,15 +1,16 @@
 ----
-title: Health.com.au Branded Editorial
-description: Customer-centric “pull” comms; blog editorial, FAQ knowledge base and data-driven landing pages.
+title: health.com.au branded editorial
+description: Customer-centric 'pull' comms: blog content, FAQ knowledge base and data-driven landing pages.
 date: 2012 - 2014
 category: Branding | Editorial | Content marketing
 Image: Insurance_blog.jpg
 ----
-* Ask-me-anything, 'did-you-know' tone of voice
 
-* Extensive helpdesk content spanning FAQs through high quality and linked articles
+* Ask-me-anything, 'did you know?' tone of voice
 
-* The road less blogged: think outside the box blog articles ripe for social sharing and syndication
+* Extensive help desk FAQ content: unique, linked articles
+
+* The road less blogged: think-outside-the-box blog articles ripe for social sharing and syndication
 
 * Layered and in-depth landing page content based on personas
 

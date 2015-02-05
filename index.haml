@@ -47,17 +47,18 @@
 
       .hr
 
-      .row
-
-        - folio.each do |item|
-          .col-md-3
-            .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-') }" }
-              .panel-heading= item.title
-              .panel-body
-                %img{ src: "/images/#{ item.image }" }
-                %p= item.description
-                .meta
-                  %small= "#{ item.category } | #{ item.date }"
+      .container
+        - folio.each_slice(4) do |row_array|
+          .row
+            - row_array.each do |item|
+              .col-md-3
+                .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-') }" }
+                  .panel-heading= item.title
+                  .panel-body
+                    %img{ src: "/images/#{ item.image }" }
+                    %p= item.description
+                    .meta
+                      %small= "#{ item.category } | #{ item.date }"
 
     -# ==========================================================================
     -# Modals

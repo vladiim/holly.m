@@ -16,7 +16,7 @@ class App
     index.close
   end
 
-  private
+  # private
 
   def html
     Haml::Engine.new(haml).render( Object.new, folio: folio )

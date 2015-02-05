@@ -1,5 +1,5 @@
 ----
-title: AVON Product Descriptions
+title: AVON product descriptions
 description: Bringing Avon's extensive product portfolio to life: reengineered product descriptions with a customer-centric focus. 
 date: 2014, 2015 
 category: eCommerce | Fashion | Beauty | Lifestyle

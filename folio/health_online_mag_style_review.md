@@ -1,15 +1,15 @@
 ----
-title: AVON Style Review
-description: Inspiring a life of style: reinvigorate Avon's fashion brand with a dedicated online 'glossy' to acquire new customers 
+title: AVON Style Review online magazine
+description: Inspiring a life of style: reinvigorate Avon's fashion brand with a dedicated online 'glossy' to acquire new customers.
 date: 2014
 category: Editorial | Content marketing | Fashion
 image: style_r_head.jpg
 ----
 * Inspirational tone of voice: fashion-forward, 'BFF', upbeat
 
-* Create a desirable online destination for fashionistas, by fashionistas
+* Created a desirable online destination for fashionistas, by fashionistas
 
-* Focus on engaging a a younger generation of customers by remixing the brand, minus the hard sell!
+* Focus on engaging a younger generation of customers by remixing the brand, minus the hard sell!
 
 * Compiled a data-driven business case and spearheaded creative and issue planning
 

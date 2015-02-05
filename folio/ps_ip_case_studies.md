@@ -1,6 +1,6 @@
 ----
-title: IP Australia Case Studies
-description: Demystifying intellectual property: craft a series of snackable case study articles on the IP Australia website.  
+title: IP Australia case studies
+description: Demystifying intellectual property: craft a series of snackable case study articles for the IP Australia website.  
 date: 2010
 category: Government | Content marketing | Editorial
 image: IP_MAIN.jpg
@@ -11,7 +11,7 @@ image: IP_MAIN.jpg
 
 * Conducted individual subject interviews 
 
-* Take somewhat dry subject matter and make it interesting, easy to read
+*  Reworked somewhat dry subject matter to make it interesting and easy to read
 
 ***
 

@@ -1,6 +1,6 @@
 ----
-title: Nourished Life Product Descriptions
-description: Doing SEO the right way: carefully-crafted product descriptions that encourage organic search engine results for Nourished Life
+title: Nourished Life product descriptions
+description: Doing SEO the right way: carefully-crafted product descriptions that encourage organic search engine results for Nourished Life.
 date: 2014
 category: eCommerce | Beauty | Lifestyle
 image: Category_intro.jpg

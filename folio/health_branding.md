@@ -1,6 +1,6 @@
 ----
-title: Health.com.au Branding
-description: Created the humans behind health insurance: making the complicated, simple. Develop health.com.au's brand identity by reinventing health insurance for the online generation.
+title: health.com.au branding
+description: The humans behind health insurance: making the complicated, simple. Develop health.com.au's brand identity by reinventing health insurance for the online generation.
 date: 2012 - 2014
 category: Branding | Health Insurance
 image: Insurance_5.jpg
