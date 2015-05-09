@@ -31,6 +31,13 @@
       = ".folio-list-item {cursor: pointer;}"
       = ".folio-list-item > .panel-body > img {width: 100%;}"
       = ".modal-body img {width: 100%;}"
+      = ".jumbotron {margin-top: 5px; padding: 5px}"
+      = ".modal-content {height:700px;padding-bottom:30px}"
+      = ".modal-body {overflow-y:auto; height: 100%;}"
+      = ".jumbotron {background-color:#F1C40F}"
+      = ".modal-header {background-color:#F1C40F}"
+      = ".panel-heading {background-color:#F1C40F !important}"
+      = '.btn-dark {background-color: #333; border-color: #333;}'
 
 
   %body
@@ -40,36 +47,44 @@
     -# ==========================================================================
 
     .container
-      .row
+      .jumbotron
         %h1 Holly Mehakovic Folio
+        %h3 Strategic copy, creative content.
+        %p A selection of work.
+        %a{ href: 'mailto:hollymehakovic@gmail.com?Subject=Hello%20Holly', target: '_top', class: 'btn btn-dark btn-lg'} Get in touch
 
       .hr
 
-      .row
+      .container
+        - folio.each_slice(4) do |row_array|
+          .row
+            - row_array.each do |item|
+              .col-md-3
+                .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-') }" }
+                  .panel-heading
+                    %b= item.title
 
-        - folio.each do |item|
-          .col-sm-3
-            .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ item.title.downcase.gsub(' ', '-') }" }
-              .panel-heading= item.title
-              .panel-body
-                %img{ src: "#{ item.image }" }
-                %p= item.description
-                .meta
-                  %small= "#{ item.category } | #{ item.date }"
+                  .panel-body
+                    %i= item.subtitle
+                    %img{ src: "/images/#{ item.image }" }
+                    %i= item.cute_description
+                    %p= item.description
+                    .meta
+                      %small= "#{ item.category } | #{ item.date }"
 
     -# ==========================================================================
     -# Modals
     -# ==========================================================================
 
     - folio.each do |item|
-      .modal.fade{ id: "modal-#{ item.title.downcase.gsub(' ', '-') }" }
+      .modal.fade{ id: "modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-') }" }
         .modal-dialog
           .modal-content
             .modal-header
               %button{ class: 'close', 'data-dismiss' => 'modal' } &times;
               %h3.modal-title= item.title
             .modal-body
-              %img{ src: "#{ item.image }" }
+              %img{ src: "/images/#{ item.image }" }
               %p= item.body
     -# JS
     -# ==========================================================================

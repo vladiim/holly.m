@@ -16,10 +16,10 @@ class App
     index.close
   end
 
-  private
+  # private
 
   def html
-    Haml::Engine.new(haml).render( Object.new, folio: folio )
+    Haml::Engine.new(haml).render(Object.new, folio: folio)
   end
 
   def folio
@@ -52,11 +52,13 @@ class Parser
   def parse_meta(string)
     meta_split = string.split(/\n/)
     OpenStruct.new(
-      title:        meta_split[1].match(/: (.+)/)[1],
-      description:  meta_split[2].match(/: (.+)/)[1],
-      date:         meta_split[3].match(/: (.+)/)[1],
-      category:     meta_split[4].match(/: (.+)/)[1],
-      image:        meta_split[5].match(/: (.+)/)[1]
+      title:            meta_split[1].match(/: (.+)/)[1],
+      subtitle:         meta_split[2].match(/: (.+)/)[1],
+      cute_description: meta_split[3].match(/: (.+)/)[1],
+      description:      meta_split[4].match(/: (.+)/)[1],
+      date:             meta_split[5].match(/: (.+)/)[1],
+      category:         meta_split[6].match(/: (.+)/)[1],
+      image:            meta_split[7].match(/: (.+)/)[1]
     )
   end
 
