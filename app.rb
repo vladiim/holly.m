@@ -23,7 +23,11 @@ class App
   end
 
   def folio
-    [Parser.new("#{ Dir.pwd }/folio/test.md").data]
+    items = Dir["#{Dir.pwd}/folio/*"]
+    items.inject([]) do |folio, item|
+      folio << Parser.new(item).data
+      folio
+    end
   end
 end
 
