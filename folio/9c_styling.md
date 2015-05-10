@@ -13,10 +13,10 @@ image: main_styling.jpg
 <br/>
 
 ![](/images/StudioBrides_DecoProd_AW12.jpg)
-
 ![](/images/StudioBrides_RivProd_SS12.jpg)
-
 ![](/images/Styling_full_page_4.jpg)
+![](/images/Styling_full_page_1.jpg)
+![](/images/Styling_full_page_2.jpg)
 
 ***
 

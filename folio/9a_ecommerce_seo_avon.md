@@ -1,5 +1,5 @@
 ----
-title: eCommerce SEO
+title: eCommerce SEO 2
 subtitle: shop.avon.com.au
 cute_description: Bringing products to life.
 description: Product descriptions that are good to read.
@@ -25,19 +25,13 @@ image: ap_main_image.jpg
 
 ***
 
-# Product email
-
-<br/>
-
-![](/images/Colour-Up-AU.jpg)
-
-***
-
 # Product description
 
 <br/>
 
 ![](/images/main_prod_description.jpg)
+![](/images/mascara.jpg)
+![](/images/lipstick_matte.jpg)
 
 ***
 
@@ -45,6 +39,16 @@ image: ap_main_image.jpg
 
 <br/>
 
-![](/images/Fragrance_1.jpg)
+![](/images/femme_copy.jpg)
+![](/images/Hair_3.jpg)
+![](/images/Hair_4.jpg)
 
 <a href="http://www.avon.com.au/PRSuite/home_page.page" target=_blank class="btn btn-primary">Visit site</a>
+
+***
+
+# Product email
+
+<br/>
+
+![](/images/Colour-Up-AU.jpg)

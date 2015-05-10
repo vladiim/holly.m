@@ -1,11 +1,11 @@
 ----
-title: Content marketing
+title: Content marketing B2C
 subtitle: health.com.au
 cute_description: Need-to-know stuff.
 description: Customer-centric FAQ knowledge base, data-driven landing pages and blog content.
 date: 2012 - 2014
 category: Branding | Editorial | Content marketing
-Image: Insurance_blog.jpg
+Image: helpdesk_1.png
 ----
 
 * Ask-me-anything, 'did you know?' tone of voice

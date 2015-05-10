@@ -1,5 +1,5 @@
 ----
-title: Content marketing
+title: Content marketing B2B
 subtitle: Switzer
 cute_description: Taking long form online.
 description: Shareable topical reads for small business owners.
@@ -13,7 +13,7 @@ image: SmallBusiness_web1.jpg
 
 * Applied long form, editorial standard to blogging
 
-* Insightful, sharable blog articles
+* Insightful, shareable blog articles
 
 ![](/images/SmallBusiness_web3.jpg)
 

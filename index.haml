@@ -37,7 +37,11 @@
       = ".jumbotron {background-color:#F1C40F}"
       = ".modal-header {background-color:#F1C40F}"
       = ".panel-heading {background-color:#F1C40F !important}"
-      = '.btn-dark {background-color: #333; border-color: #333;}'
+      = '.btn-dark {background-color:#333; border-color:#333; color:#F1C40F; font-weight:bold;}'
+      = 'a.btn-dark:hover {color:#fff;}'
+      = '.jumbotron {padding-bottom: 20px;}'
+      = '.jumbotron p {margin: -10px 0 0 0;}'
+      = '.jumbotron h3 {margin: 0 0 20px 0;}'
 
 
   %body
@@ -49,9 +53,9 @@
     .container
       .jumbotron
         %h1 Holly Mehakovic Folio
-        %h3 Strategic copy, creative content.
         %p A selection of work.
-        %a{ href: 'mailto:hollymehakovic@gmail.com?Subject=Hello%20Holly', target: '_top', class: 'btn btn-dark btn-lg'} Get in touch
+        %h3 Strategic copy, creative content.
+        %a{ href: 'mailto:hollymehakovic@gmail.com?Subject=Hello%20Holly', target: '_top', class: 'btn btn-dark btn-lg'} Email me
 
       .hr
 

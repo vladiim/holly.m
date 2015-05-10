@@ -1,5 +1,5 @@
 ----
-title: eCommerce SEO
+title: eCommerce SEO 1
 subtitle: nourishedlife.com
 cute_description: Doing SEO the right way.
 description: Carefully crafted product descriptions that encourage results.

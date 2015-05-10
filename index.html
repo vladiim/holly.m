@@ -17,16 +17,20 @@
       .jumbotron {background-color:#F1C40F}
       .modal-header {background-color:#F1C40F}
       .panel-heading {background-color:#F1C40F !important}
-      .btn-dark {background-color: #333; border-color: #333;}
+      .btn-dark {background-color:#333; border-color:#333; color:#F1C40F; font-weight:bold;}
+      a.btn-dark:hover {color:#fff;}
+      .jumbotron {padding-bottom: 20px;}
+      .jumbotron p {margin: -10px 0 0 0;}
+      .jumbotron h3 {margin: 0 0 20px 0;}
     </style>
   </head>
   <body>
     <div class='container'>
       <div class='jumbotron'>
         <h1>Holly Mehakovic Folio</h1>
-        <h3>Strategic copy, creative content.</h3>
         <p>A selection of work.</p>
-        <a class='btn btn-dark btn-lg' href='mailto:hollymehakovic@gmail.com?Subject=Hello%20Holly' target='_top'>Get in touch</a>
+        <h3>Strategic copy, creative content.</h3>
+        <a class='btn btn-dark btn-lg' href='mailto:hollymehakovic@gmail.com?Subject=Hello%20Holly' target='_top'>Email me</a>
       </div>
       <div class='hr'></div>
       <div class='container'>
@@ -71,7 +75,7 @@
               <div class='panel-body'>
                 <i>Print magazines</i>
                 <img src='/images/cover_finance.jpg'>
-                <i>Blah</i>
+                <i>Info for entrepreneurs.</i>
                 <p>Magazine articles from various B2B and consumer titles.</p>
                 <div class='meta'>
                   <small>B2B | Print | Editorial | Magazine | 2007-2010</small>
@@ -130,9 +134,9 @@
             </div>
           </div>
           <div class='col-md-3'>
-            <div class='panel panel-default folio-list-item' data-target='#modal-content-marketing' data-toggle='modal'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-content-marketing-b2b' data-toggle='modal'>
               <div class='panel-heading'>
-                <b>Content marketing</b>
+                <b>Content marketing B2B</b>
               </div>
               <div class='panel-body'>
                 <i>Switzer</i>
@@ -146,13 +150,13 @@
             </div>
           </div>
           <div class='col-md-3'>
-            <div class='panel panel-default folio-list-item' data-target='#modal-content-marketing' data-toggle='modal'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-content-marketing-b2c' data-toggle='modal'>
               <div class='panel-heading'>
-                <b>Content marketing</b>
+                <b>Content marketing B2C</b>
               </div>
               <div class='panel-body'>
                 <i>health.com.au</i>
-                <img src='/images/Insurance_blog.jpg'>
+                <img src='/images/helpdesk_1.png'>
                 <i>Need-to-know stuff.</i>
                 <p>Customer-centric FAQ knowledge base, data-driven landing pages and blog content.</p>
                 <div class='meta'>
@@ -164,9 +168,9 @@
         </div>
         <div class='row'>
           <div class='col-md-3'>
-            <div class='panel panel-default folio-list-item' data-target='#modal-ecommerce-seo' data-toggle='modal'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-ecommerce-seo-1' data-toggle='modal'>
               <div class='panel-heading'>
-                <b>eCommerce SEO</b>
+                <b>eCommerce SEO 1</b>
               </div>
               <div class='panel-body'>
                 <i>nourishedlife.com</i>
@@ -180,9 +184,9 @@
             </div>
           </div>
           <div class='col-md-3'>
-            <div class='panel panel-default folio-list-item' data-target='#modal-ecommerce-seo' data-toggle='modal'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-ecommerce-seo-2' data-toggle='modal'>
               <div class='panel-heading'>
-                <b>eCommerce SEO</b>
+                <b>eCommerce SEO 2</b>
               </div>
               <div class='panel-body'>
                 <i>shop.avon.com.au</i>
@@ -442,12 +446,12 @@
         </div>
       </div>
     </div>
-    <div class='modal fade' id='modal-content-marketing'>
+    <div class='modal fade' id='modal-content-marketing-b2b'>
       <div class='modal-dialog'>
         <div class='modal-content'>
           <div class='modal-header'>
             <button class='close' data-dismiss='modal'>&times;</button>
-            <h3 class='modal-title'>Content marketing</h3>
+            <h3 class='modal-title'>Content marketing B2B</h3>
           </div>
           <div class='modal-body'>
             <img src='/images/SmallBusiness_web1.jpg '>
@@ -456,7 +460,7 @@
               <li><p>Editorial, informative, professional tone of voice</p></li>
               <li><p>Conducted subject interviews</p></li>
               <li><p>Applied long form, editorial standard to blogging</p></li>
-              <li><p>Insightful, sharable blog articles</p></li>
+              <li><p>Insightful, shareable blog articles</p></li>
               </ul>
               
               <p><img src="/images/SmallBusiness_web3.jpg" alt=""></p>
@@ -474,15 +478,15 @@
         </div>
       </div>
     </div>
-    <div class='modal fade' id='modal-content-marketing'>
+    <div class='modal fade' id='modal-content-marketing-b2c'>
       <div class='modal-dialog'>
         <div class='modal-content'>
           <div class='modal-header'>
             <button class='close' data-dismiss='modal'>&times;</button>
-            <h3 class='modal-title'>Content marketing</h3>
+            <h3 class='modal-title'>Content marketing B2C</h3>
           </div>
           <div class='modal-body'>
-            <img src='/images/Insurance_blog.jpg'>
+            <img src='/images/helpdesk_1.png'>
             <p>
               <ul>
               <li><p>Ask-me-anything, &#39;did you know?&#39; tone of voice</p></li>
@@ -530,12 +534,12 @@
         </div>
       </div>
     </div>
-    <div class='modal fade' id='modal-ecommerce-seo'>
+    <div class='modal fade' id='modal-ecommerce-seo-1'>
       <div class='modal-dialog'>
         <div class='modal-content'>
           <div class='modal-header'>
             <button class='close' data-dismiss='modal'>&times;</button>
-            <h3 class='modal-title'>eCommerce SEO</h3>
+            <h3 class='modal-title'>eCommerce SEO 1</h3>
           </div>
           <div class='modal-body'>
             <img src='/images/Category_intro.jpg'>
@@ -563,12 +567,12 @@
         </div>
       </div>
     </div>
-    <div class='modal fade' id='modal-ecommerce-seo'>
+    <div class='modal fade' id='modal-ecommerce-seo-2'>
       <div class='modal-dialog'>
         <div class='modal-content'>
           <div class='modal-header'>
             <button class='close' data-dismiss='modal'>&times;</button>
-            <h3 class='modal-title'>eCommerce SEO</h3>
+            <h3 class='modal-title'>eCommerce SEO 2</h3>
           </div>
           <div class='modal-body'>
             <img src='/images/ap_main_image.jpg'>
@@ -587,19 +591,13 @@
               
               <hr>
               
-              <h1>Product email</h1>
-              
-              <p><br/></p>
-              
-              <p><img src="/images/Colour-Up-AU.jpg" alt=""></p>
-              
-              <hr>
-              
               <h1>Product description</h1>
               
               <p><br/></p>
               
-              <p><img src="/images/main_prod_description.jpg" alt=""></p>
+              <p><img src="/images/main_prod_description.jpg" alt="">
+              <img src="/images/mascara.jpg" alt="">
+              <img src="/images/lipstick_matte.jpg" alt=""></p>
               
               <hr>
               
@@ -607,9 +605,19 @@
               
               <p><br/></p>
               
-              <p><img src="/images/Fragrance_1.jpg" alt=""></p>
+              <p><img src="/images/femme_copy.jpg" alt="">
+              <img src="/images/Hair_3.jpg" alt="">
+              <img src="/images/Hair_4.jpg" alt=""></p>
               
               <p><a href="http://www.avon.com.au/PRSuite/home_page.page" target=_blank class="btn btn-primary">Visit site</a></p>
+              
+              <hr>
+              
+              <h1>Product email</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/Colour-Up-AU.jpg" alt=""></p>
             </p>
           </div>
         </div>
@@ -670,11 +678,11 @@
               
               <p><br/></p>
               
-              <p><img src="/images/StudioBrides_DecoProd_AW12.jpg" alt=""></p>
-              
-              <p><img src="/images/StudioBrides_RivProd_SS12.jpg" alt=""></p>
-              
-              <p><img src="/images/Styling_full_page_4.jpg" alt=""></p>
+              <p><img src="/images/StudioBrides_DecoProd_AW12.jpg" alt="">
+              <img src="/images/StudioBrides_RivProd_SS12.jpg" alt="">
+              <img src="/images/Styling_full_page_4.jpg" alt="">
+              <img src="/images/Styling_full_page_1.jpg" alt="">
+              <img src="/images/Styling_full_page_2.jpg" alt=""></p>
               
               <hr>
               
