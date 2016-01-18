@@ -31,6 +31,6 @@ image: nab_asia_head.png
 
 * Video script writing - nab internal comms
 
-![](/images/bus_insights.png.png)
+![](/images/bus_insights.png)
 
 <a href='http://business.nab.com.au/' target=_blank class='btn btn-primary'>Visit the site</a>

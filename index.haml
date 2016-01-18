@@ -64,7 +64,7 @@
           .row
             - row_array.each do |item|
               .col-md-3
-                .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-') }" }
+                .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-').gsub('&', '') }" }
                   .panel-heading
                     %b= item.title
 
@@ -81,7 +81,7 @@
     -# ==========================================================================
 
     - folio.each do |item|
-      .modal.fade{ id: "modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-') }" }
+      .modal.fade{ id: "modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-').gsub('&', '') }" }
         .modal-dialog
           .modal-content
             .modal-header
