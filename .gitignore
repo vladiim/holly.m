@@ -1,2 +1,4 @@
 s3_website.yml
 .ruby-version
+.DS_Store
+**/.DS_Store
