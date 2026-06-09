@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '3.3.5'
 
 gem 'haml'
 gem 'redcarpet'
-gem 'byebug'
+#gem 'byebug'

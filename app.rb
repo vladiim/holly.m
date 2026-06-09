@@ -1,7 +1,6 @@
 require 'haml'
 require 'ostruct'
 require 'redcarpet'
-require 'byebug'
 
 class App
   attr_reader :haml
@@ -11,21 +10,31 @@ class App
   end
 
   def render_index_html
-    index = File.open('index.html', 'w')
-    index << html
-    index.close
+    write('index.html', html(:index))
+  end
+
+  def render_old_html
+    write('old.html', html(:old))
   end
 
   # private
 
-  def html
-    Haml::Engine.new(haml).render(Object.new, folio: folio)
+  def write(path, content)
+    file = File.open(path, 'w')
+    file << content
+    file.close
+  end
+
+  def html(mode = :index)
+    Haml::Engine.new(haml).render(Object.new, folio: folio, mode: mode)
   end
 
   def folio
-    items = Dir["#{Dir.pwd}/folio/*"]
+    items = Dir["#{Dir.pwd}/folio/*"].sort
     items.inject([]) do |folio, item|
-      folio << Parser.new(item).data
+      data = Parser.new(item).data
+      data.featured = File.basename(item).start_with?('0')
+      folio << data
       folio
     end
   end

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html class='no-js' lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>Embarrassingly old stuff — Holly Mehakovic</title>
+    <meta content='' name='description'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href='/favicon.ico' rel='shortcut icon'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' rel='stylesheet'>
+    <style>
+      .folio-list-item {cursor: pointer;}
+      .folio-list-item > .panel-body > img {width: 100%;}
+      .modal-body img {width: 100%;}
+      .jumbotron {margin-top: 5px; padding: 5px}
+      .modal-content {height:700px;padding-bottom:30px}
+      .modal-body {overflow-y:auto; height: 100%;}
+      .jumbotron {background-color:#F5E4A0}
+      .modal-header {background-color:#F5E4A0}
+      .panel-heading {background-color:#F5E4A0 !important}
+      .btn-dark {background-color:#333; border-color:#333; color:#F5E4A0; font-weight:bold;}
+      a.btn-dark:hover {color:#fff;}
+      .jumbotron {padding-bottom: 20px;}
+      .jumbotron p {margin: -10px 0 0 0;}
+      .jumbotron h3 {margin: 0 0 20px 0;}
+      .jumbotron {padding-left: 15px; padding-right: 15px;}
+      .folio-grid .row {display: flex; flex-wrap: wrap;}
+      .folio-grid .row > [class*="col-"] {display: flex;}
+      .folio-list-item {width: 100%; display: flex; flex-direction: column;}
+      .folio-list-item > .panel-body {flex: 1 1 auto;}
+      .old-stuff-band {display: block; width: 100%; background-color: #F5E4A0; text-align: center; padding: 22px 15px; margin: 5px 0 25px; border-radius: 6px;}
+      .old-stuff-band h2 {margin: 0; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;}
+      .old-stuff-band p {margin: 6px 0 0; font-style: italic; font-size: 16px;}
+      a.old-stuff-band, a.old-stuff-band:hover, a.old-stuff-band:focus {color: #333; text-decoration: none; cursor: pointer; transition: background-color 0.15s ease;}
+      a.old-stuff-band:hover {background-color: #EAD884;}
+      a.old-stuff-band .cue {display: inline-block; margin-top: 8px; font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;}
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <a class='jumbotron' href='index.html' style='display:block; color:#333; text-decoration:none;'>
+        <h1>Embarrassingly old stuff</h1>
+        <p>Great work. Questionable web design.</p>
+        <h3>← Back to selected work</h3>
+      </a>
+      <div class='hr'></div>
+      <div class='folio-grid'>
+        <div class='row'>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-content-strategy--editorial' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Content strategy & editorial</b>
+              </div>
+              <div class='panel-body'>
+                <i>nab Business Asia / Insights</i>
+                <img src='/images/nab_asia_head.png'>
+                <i>Content as a service.</i>
+                <p>Helping customers navigate the world of business.</p>
+                <div class='meta'>
+                  <small>Content | Finance | 2015</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-content---finance' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Content - finance</b>
+              </div>
+              <div class='panel-body'>
+                <i>KPMG</i>
+                <img src='/images/kpmg_header.png'>
+                <i>Making finance super fresh.</i>
+                <p>Bringing a sharp editorial eye to financial content.</p>
+                <div class='meta'>
+                  <small>Content | Finance | 2015</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-rebranding' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Rebranding</b>
+              </div>
+              <div class='panel-body'>
+                <i>Online magazine, Avon</i>
+                <img src='/images/style_r_head.jpg'>
+                <i>Where did you get that?</i>
+                <p>Avon becomes a fashion destination.</p>
+                <div class='meta'>
+                  <small>Editorial | Content marketing | Fashion | 2014</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-business-editorial' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Business editorial</b>
+              </div>
+              <div class='panel-body'>
+                <i>Print magazines</i>
+                <img src='/images/cover_finance.jpg'>
+                <i>Info for entrepreneurs.</i>
+                <p>Magazine articles from various B2B and consumer titles.</p>
+                <div class='meta'>
+                  <small>B2B | Print | Editorial | Magazine | 2007-2010</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-lifestyle-editorial' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Lifestyle editorial</b>
+              </div>
+              <div class='panel-body'>
+                <i>Print magazines</i>
+                <img src='/images/main_article.jpg'>
+                <i>Hello, gorgeous!</i>
+                <p>A clutch of fashion, beauty and lifestyle articles.</p>
+                <div class='meta'>
+                  <small>Magazine | Print | Editorial | Fashion | Lifestyle | 2007 - 2012</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-case-studies' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Case studies</b>
+              </div>
+              <div class='panel-body'>
+                <i>IP Australia</i>
+                <img src='/images/IP_MAIN.jpg'>
+                <i>Demystifying intellectual property.</i>
+                <p>Easy-to-read articles for small business owners.</p>
+                <div class='meta'>
+                  <small>Government | Content marketing | Editorial | 2010</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-marketing-emails' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Marketing emails</b>
+              </div>
+              <div class='panel-body'>
+                <i>Various brands</i>
+                <img src='/images/avon_email.png'>
+                <i>If lipsticks could talk.</i>
+                <p>Narrative-driven eDMs with creative CTAs</p>
+                <div class='meta'>
+                  <small>Fashion | eDM | Insurance | 2012-2015</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-content-marketing-b2b' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Content marketing B2B</b>
+              </div>
+              <div class='panel-body'>
+                <i>Switzer</i>
+                <img src='/images/SmallBusiness_web1.jpg '>
+                <i>Taking long form online.</i>
+                <p>Shareable topical reads for small business owners.</p>
+                <div class='meta'>
+                  <small>Blogging | Content marketing | Editorial | 2009</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-content-marketing-b2c' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Content marketing B2C</b>
+              </div>
+              <div class='panel-body'>
+                <i>health.com.au</i>
+                <img src='/images/helpdesk_1.png'>
+                <i>Need-to-know stuff.</i>
+                <p>Customer-centric FAQ knowledge base, data-driven landing pages and blog content.</p>
+                <div class='meta'>
+                  <small>Branding | Editorial | Content marketing | 2012 - 2014</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-ecommerce-seo-1' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>eCommerce SEO 1</b>
+              </div>
+              <div class='panel-body'>
+                <i>nourishedlife.com</i>
+                <img src='/images/Category_intro.jpg'>
+                <i>Doing SEO the right way.</i>
+                <p>Carefully crafted product descriptions that encourage results.</p>
+                <div class='meta'>
+                  <small>eCommerce | Beauty | Lifestyle | 2014</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-ecommerce-seo-2' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>eCommerce SEO 2</b>
+              </div>
+              <div class='panel-body'>
+                <i>shop.avon.com.au</i>
+                <img src='/images/ap_main_image.jpg'>
+                <i>Bringing products to life.</i>
+                <p>Product descriptions that are good to read.</p>
+                <div class='meta'>
+                  <small>eCommerce | Fashion | Beauty | Lifestyle | 2014, 2015</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-fundraising-campaign' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Fundraising campaign</b>
+              </div>
+              <div class='panel-body'>
+                <i>Avon Breast Cancer Crusade</i>
+                <img src='/images/Causes_site.jpg'>
+                <i>More than just a pretty face.</i>
+                <p>Building buzz around the #AvonMillionReasons campaign.</p>
+                <div class='meta'>
+                  <small>PR | Content marketing | CSR | 2014</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-md-4'>
+            <div class='panel panel-default folio-list-item' data-target='#modal-fashion-styling' data-toggle='modal'>
+              <div class='panel-heading'>
+                <b>Fashion styling</b>
+              </div>
+              <div class='panel-body'>
+                <i>Print magazines</i>
+                <img src='/images/main_styling.jpg '>
+                <i>Trend pieces.</i>
+                <p>Commercially strategic product pages + shoot tearsheets.</p>
+                <div class='meta'>
+                  <small>Photography | Advertorial | Interiors | 2010 - 2011</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-content-strategy--editorial'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Content strategy & editorial</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/nab_asia_head.png'>
+            <p>
+              <h1>Business Asia</h1>
+              
+              <ul>
+              <li><p>Product / editorial conceptualisation and positioning</p></li>
+              <li><p>Brand - elevator pitches, unique selling proposition.</p></li>
+              <li><p>Messaging and tone of voice</p></li>
+              </ul>
+              
+              <p><img src="/images/nab_asia.png" alt=""></p>
+              
+              <p><a href='http://www.nab.com.au/business-asia' target=_blank class='btn btn-primary'>Visit the site</a></p>
+              
+              <hr>
+              
+              <h1>Business Insights</h1>
+              
+              <ul>
+              <li><p>Turned dry research into actionable insights - customer superannuation / investment blogs</p></li>
+              <li><p>Subbing and positioning - personal wealth expert blogs</p></li>
+              <li><p>Intensive copy editing - nab internal comms / broker playbook</p></li>
+              <li><p>Video script writing - nab internal comms</p></li>
+              </ul>
+              
+              <p><img src="/images/bus_insights.png" alt=""></p>
+              
+              <p><a href='http://business.nab.com.au/' target=_blank class='btn btn-primary'>Visit the site</a></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-content---finance'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Content - finance</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/kpmg_header.png'>
+            <p>
+              <ul>
+              <li><p>Alumni magazine - profile article writing</p></li>
+              <li><p>Blog articles (family survey, angel investing) - ghostwriting and copyediting</p></li>
+              <li><p>200 page 2014 Annual Report + sensitive proposal documents - high level subediting</p></li>
+              </ul>
+              
+              <h1>Angel investing article</h1>
+              
+              <p><img src="/images/kpmg_angel_invest.png" alt=""></p>
+              
+              <p><a href='http://www.kpmg.com/AU/en/beyond/new-thinking/Pages/angel-investors.aspx' target=_blank class='btn btn-primary'>Visit the site</a></p>
+              
+              <hr>
+              
+              <h1>Family business survey</h1>
+              
+              <p><img src="/images/kpmg_family_survey.png" alt=""></p>
+              
+              <p><a href='http://www.kpmg.com/AU/en/IssuesAndInsights/ArticlesPublications/private-company-family-business/Pages/family-business-survey-2015-overview.aspx' target=_blank class='btn btn-primary'>Visit the site</a></p>
+              
+              <hr>
+              
+              <h1>Alumni magazine</h1>
+              
+              <p><img src="/images/kpmg_alum1.png" alt=""></p>
+              
+              <p><img src="/images/kpmg_alum2.png" alt=""></p>
+              
+              <hr>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-rebranding'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Rebranding</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/style_r_head.jpg'>
+            <p>
+              <ul>
+              <li><p>Inspirational tone of voice: fashion-forward, &#39;BFF&#39;, upbeat</p></li>
+              <li><p>Created a desirable online destination for fashionistas, by fashionistas</p></li>
+              <li><p>Focus on engaging a younger generation of customers by remixing the brand, minus the hard sell!</p></li>
+              <li><p>Compiled a data-driven business case and spearheaded creative and issue planning</p></li>
+              <li><p>Generated top 3 organic search results</p></li>
+              <li><p>Launched without budget, averaged 124 visits per day, 5% conversion to newsletter signups, $30 average order basket size </p></li>
+              <li><p>Supporting eDM content </p></li>
+              </ul>
+              
+              <p><a href="http://fashion.avon.com.au" target=_blank class="btn btn-primary">Visit site</a></p>
+              
+              <hr>
+              
+              <h1>Editoral page</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/editorial_page.jpg" alt=""></p>
+              
+              <hr>
+              
+              <h1>Trend page</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/trend_page.jpg" alt=""></p>
+              
+              <hr>
+              
+              <h1>Email</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/stylereview_issue18_fashion.jpg" alt=""></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-business-editorial'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Business editorial</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/cover_finance.jpg'>
+            <p>
+              <p><img src="/images/Business_profile_1.jpg" alt="">
+              <img src="/images/Business_profile_2.jpg" alt="">
+              <img src="/images/Entrep_profile_3.jpg" alt="">
+              <img src="/images/Entrep_profile_5.jpg" alt="">
+              <img src="/images/IP_Feature.jpg" alt=""></p>
+              
+              <hr>
+              
+              <p><img src="/images/Education_1.jpg" alt="">
+              <img src="/images/recruitment.png" alt="">
+              <img src="/images/rep_suite-page-001.jpg" alt="">
+              <img src="/images/Training_1.jpg" alt="">
+              <img src="/images/Training_2.jpg" alt="">
+              <img src="/images/Training_3.jpg" alt="">
+              <img src="/images/Training_4.jpg" alt=""></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-lifestyle-editorial'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Lifestyle editorial</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/main_article.jpg'>
+            <p>
+              <p><img src="/images/Feature_1.jpg" alt="">
+              <img src="/images/Feature_2.jpg" alt="">
+              <img src="/images/Feature_3.jpg" alt="">
+              <img src="/images/Feature_4.jpg" alt="">
+              <img src="/images/Feature_5.jpg" alt="">
+              <img src="/images/Feature_6.jpg" alt="">
+              <img src="/images/p1.StudioBrides_AppFeature_SS13.jpg" alt="">
+              <img src="/images/p2.StudioBrides_AppFeature_SS13.jpg" alt="">
+              <img src="/images/p3.StudioBrides_AppFeature_SS13.jpg" alt="">
+              <img src="/images/StudioBambini_FashionFeature_SS12%20copy-page-001.jpg" alt="">
+              <img src="/images/StudioBambini_FashionFeature_SS12%20copy-page-002.jpg" alt="">
+              <img src="/images/StudioBambini_FashionFeature_SS12%20copy-page-003.jpg" alt="">
+              <img src="/images/StudioBambini_FashionFeature_SS12%20copy-page-004.jpg" alt="">
+              <img src="/images/StudioBrides_SerumReview_AW12%20copy.jpg" alt="">
+              <img src="/images/MG_Runways_LR%201-page-001.jpg" alt="">
+              <img src="/images/Runways_LR%205-page-001.jpg" alt="">
+              <img src="/images/MG_Runways_LR%202-page-001.jpg" alt="">
+              <img src="/images/MG_Runways_LR%203-page-001.jpg" alt="">
+              <img src="/images/MG_Runways_LR%204-page-001.jpg" alt="">
+              <img src="/images/MG_Runways_LR%206-page-001.jpg" alt="">
+              <img src="/images/MG_Runways_LR%207-page-001.jpg" alt="">
+              <img src="/images/MG_Runways_LR%208-page-001.jpg" alt="">
+              <img src="/images/MG_Runways_LR%209-page-001.jpg" alt="">
+              <img src="/images/xAvon_beauty.jpg" alt=""></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-case-studies'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Case studies</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/IP_MAIN.jpg'>
+            <p>
+              <ul>
+              <li><p>Tone of voice: factual, reportage, informative</p></li>
+              <li><p>6X scannable, bite-sized article pieces</p></li>
+              <li><p>Conducted individual subject interviews </p></li>
+              <li><p>Reworked somewhat dry subject matter to make it interesting and easy to read</p></li>
+              </ul>
+              
+              <hr>
+              
+              <h1>Case study articles</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/IP_web1.jpg" alt=""></p>
+              
+              <p><a href="http://www.ipaustralia.gov.au/understanding-intellectual-property/case-studies/pbr-for-rose-grower" target=_blank class='btn btn-primary'>Read Case Study 1</a></p>
+              
+              <hr>
+              
+              <p><img src="/images/IP_web2.jpg" alt=""></p>
+              
+              <p><a href="http://www.ipaustralia.gov.au/understanding-intellectual-property/case-studies/pbr-for-the-plant-nursery-industry" target=_blank class='btn btn-primary'>Read Case Study 2</a></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-marketing-emails'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Marketing emails</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/avon_email.png'>
+            <p>
+              <p><img src="/images/email_1.png" alt="">
+              <img src="/images/email_2.png" alt="">
+              <img src="/images/email_3.png" alt="">
+              <img src="/images/email_4.png" alt="">
+              <img src="/images/email_5.png" alt="">
+              <img src="/images/Avon_Femme_Available-AUcopy.jpg" alt="">
+              <img src="/images/UCR-Matte-Lipstick-AU%5B2%5Dcopy.jpg" alt="">
+              <img src="/images/hot_deals.jpeg" alt="">
+              <img src="/images/Big-and-Daring-Mascara%20copy.jpg" alt="">
+              <img src="/images/aw_mockup1.jpg" alt="">
+              <img src="/images/makeup_sale_au2copy.jpg" alt=""></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-content-marketing-b2b'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Content marketing B2B</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/SmallBusiness_web1.jpg '>
+            <p>
+              <ul>
+              <li><p>Editorial, informative, professional tone of voice</p></li>
+              <li><p>Conducted subject interviews</p></li>
+              <li><p>Applied long form, editorial standard to blogging</p></li>
+              <li><p>Insightful, shareable blog articles</p></li>
+              </ul>
+              
+              <p><img src="/images/SmallBusiness_web3.jpg" alt=""></p>
+              
+              <div class='row'>
+                <div class='col-xs-6'>
+                  <a href='http://www.switzer.com.au/small-business/women-in-business/across-the-great-divide/' target=_blank class='btn btn-default'>Read Women in Business blog</a>
+                </div>
+                <div class='col-xs-6'>
+                  <a href='http://www.growyourbusiness.com.au/success/roas-test/' target=_blank class='btn btn-primary'>Read Road Test blog</a>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-content-marketing-b2c'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Content marketing B2C</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/helpdesk_1.png'>
+            <p>
+              <ul>
+              <li><p>Ask-me-anything, &#39;did you know?&#39; tone of voice</p></li>
+              <li><p>Extensive help desk FAQ content: unique, linked articles</p></li>
+              <li><p>The road less blogged: think-outside-the-box blog articles ripe for social sharing and syndication</p></li>
+              <li><p>Layered and in-depth landing page content based on personas</p></li>
+              <li><p>Supporting eDM content</p></li>
+              </ul>
+              
+              <hr>
+              
+              <h1>Blog</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/blog_content_1.png" alt="">
+              <img src="/images/blog_content_2.png" alt="">
+              <img src="/images/blog_content_3.png" alt=""></p>
+              
+              <p><a href="http://health.com.au/blog/" target=_blank class="btn btn-primary">Read the Blog</a></p>
+              
+              <hr>
+              
+              <h1>Knowledge base articles</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/helpdesk_1.png" alt="">
+              <img src="/images/helpdesk_2.png" alt="">
+              <img src="/images/helpdesk_3.png" alt=""></p>
+              
+              <p><a href="https://help.health.com.au" target=_blank class="btn btn-primary">Visit the helpdesk</a></p>
+              
+              <hr>
+              
+              <h1>Landing pages</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/landingpage_1.png" alt="">
+              <img src="/images/landingpage_2.png" alt="">
+              <img src="/images/landingpage_3.png" alt=""></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-ecommerce-seo-1'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>eCommerce SEO 1</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/Category_intro.jpg'>
+            <p>
+              <ul>
+              <li><p>Structured tone of voice: happy, fun, casual, passionate </p></li>
+              <li><p>Focus on high quality, unique content interwoven with keywords, anchors and links</p></li>
+              <li><p>Showcase product benefits within a fun &#39;how to use&#39; context</p></li>
+              <li><p>Click-worthy meta description text </p></li>
+              </ul>
+              
+              <p><a href="http://www.nourishedlife.com.au" target=_blank class='btn btn-primary'>Visit shop</a></p>
+              
+              <hr>
+              
+              <h1>Product descriptions</h1>
+              
+              <p><img src="/images/Conditioner_curelle.jpg" alt=""></p>
+              
+              <p><img src="/images/Kids_hair_description.jpg" alt=""></p>
+              
+              <p><img src="/images/Volume_shampoo.jpg" alt=""></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-ecommerce-seo-2'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>eCommerce SEO 2</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/ap_main_image.jpg'>
+            <p>
+              <ul>
+              <li><p>Restructured tone of voice: helpful, conversational, friendly, authoritative </p></li>
+              <li><p>Position Avon as a trusted source of knowledge</p></li>
+              <li><p>Insight into the problem-solving capabilities of each product within everyday contexts</p></li>
+              <li><p>Expert advice and added value through through editorial content, i.e. <em>Beauty Editor Notes</em></p></li>
+              <li><p>600+ SEO rich product descriptions across seven categories</p></li>
+              <li><p>Supporting eDM and micro site content</p></li>
+              <li><p>Revised syndication of print &gt; digital content processes</p></li>
+              </ul>
+              
+              <p><a href="https://shop.avon.com.au" target=_blank class="btn btn-primary">Visit shop</a></p>
+              
+              <hr>
+              
+              <h1>Product description</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/main_prod_description.jpg" alt="">
+              <img src="/images/mascara.jpg" alt="">
+              <img src="/images/lipstick_matte.jpg" alt=""></p>
+              
+              <hr>
+              
+              <h1>Product microsite</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/femme_copy.jpg" alt="">
+              <img src="/images/Hair_3.jpg" alt="">
+              <img src="/images/Hair_4.jpg" alt=""></p>
+              
+              <p><a href="http://www.avon.com.au/PRSuite/home_page.page" target=_blank class="btn btn-primary">Visit site</a></p>
+              
+              <hr>
+              
+              <h1>Product email</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/Colour-Up-AU.jpg" alt=""></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-fundraising-campaign'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Fundraising campaign</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/Causes_site.jpg'>
+            <p>
+              <ul>
+              <li><p>Executed tone of voice: sincere, motivational, corporate</p></li>
+              <li><p>Engagement from campaign brief and strategy through execution</p></li>
+              <li><p>Cross-channel message integration; brochure, PR, event, web, email and social</p></li>
+              <li><p>Recruitment hook</p></li>
+              <li><p>Social media campaign activation</p></li>
+              <li><p>Campaign raised $1M for breast cancer research</p></li>
+              </ul>
+              
+              <p><a href='http://www.avon.com.au/PRSuite/crusade.page' class='btn btn-primary' target=_blank>Visit site</a></p>
+              
+              <hr>
+              
+              <h1>Email</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/bc_achieved_updated%20copy.jpg" alt=""></p>
+              
+              <hr>
+              
+              <h1>Micro site</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/breast_cancer.jpg" alt=""></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal fade' id='modal-fashion-styling'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button class='close' data-dismiss='modal'>&times;</button>
+            <h3 class='modal-title'>Fashion styling</h3>
+          </div>
+          <div class='modal-body'>
+            <img src='/images/main_styling.jpg '>
+            <p>
+              <h1>Product pages</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/StudioBrides_DecoProd_AW12.jpg" alt="">
+              <img src="/images/StudioBrides_RivProd_SS12.jpg" alt="">
+              <img src="/images/Styling_full_page_4.jpg" alt="">
+              <img src="/images/Styling_full_page_1.jpg" alt="">
+              <img src="/images/Styling_full_page_2.jpg" alt=""></p>
+              
+              <hr>
+              
+              <h1>Lookbooks</h1>
+              
+              <p><br/></p>
+              
+              <p><img src="/images/HoneyHartley.jpg" alt="Honey Hartley"></p>
+              
+              <p><img src="/images/DanielAvakian.jpg" alt="Daniel Avakian"></p>
+              
+              <p><img src="/images/AhmadIsco.jpg" alt="Ahmad Isco"></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js'></script>
+    <noscript>
+      <iframe height='0' src='//www.googletagmanager.com/ns.html?id=GTM-K33RKC' style='display:none;visibility:hidden' width='0'></iframe>
+    </noscript>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-K33RKC')
+    </script>
+  </body>
+</html>

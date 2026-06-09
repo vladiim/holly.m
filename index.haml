@@ -10,7 +10,7 @@
 
     %meta{:charset => "utf-8"}
 
-    %title
+    %title= mode == :old ? 'Embarrassingly old stuff — Holly Mehakovic' : 'Holly Mehakovic Folio'
     %meta{:name => "description", :content => ""}
 
     -# Mobile
@@ -34,14 +34,25 @@
       = ".jumbotron {margin-top: 5px; padding: 5px}"
       = ".modal-content {height:700px;padding-bottom:30px}"
       = ".modal-body {overflow-y:auto; height: 100%;}"
-      = ".jumbotron {background-color:#F1C40F}"
-      = ".modal-header {background-color:#F1C40F}"
-      = ".panel-heading {background-color:#F1C40F !important}"
-      = '.btn-dark {background-color:#333; border-color:#333; color:#F1C40F; font-weight:bold;}'
+      = ".jumbotron {background-color:#F5E4A0}"
+      = ".modal-header {background-color:#F5E4A0}"
+      = ".panel-heading {background-color:#F5E4A0 !important}"
+      = '.btn-dark {background-color:#333; border-color:#333; color:#F5E4A0; font-weight:bold;}'
       = 'a.btn-dark:hover {color:#fff;}'
       = '.jumbotron {padding-bottom: 20px;}'
       = '.jumbotron p {margin: -10px 0 0 0;}'
       = '.jumbotron h3 {margin: 0 0 20px 0;}'
+      = '.jumbotron {padding-left: 15px; padding-right: 15px;}'
+      = '.folio-grid .row {display: flex; flex-wrap: wrap;}'
+      = '.folio-grid .row > [class*="col-"] {display: flex;}'
+      = '.folio-list-item {width: 100%; display: flex; flex-direction: column;}'
+      = '.folio-list-item > .panel-body {flex: 1 1 auto;}'
+      = '.old-stuff-band {display: block; width: 100%; background-color: #F5E4A0; text-align: center; padding: 22px 15px; margin: 5px 0 25px; border-radius: 6px;}'
+      = '.old-stuff-band h2 {margin: 0; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;}'
+      = '.old-stuff-band p {margin: 6px 0 0; font-style: italic; font-size: 16px;}'
+      = 'a.old-stuff-band, a.old-stuff-band:hover, a.old-stuff-band:focus {color: #333; text-decoration: none; cursor: pointer; transition: background-color 0.15s ease;}'
+      = 'a.old-stuff-band:hover {background-color: #EAD884;}'
+      = 'a.old-stuff-band .cue {display: inline-block; margin-top: 8px; font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;}'
 
 
   %body
@@ -51,19 +62,28 @@
     -# ==========================================================================
 
     .container
-      .jumbotron
-        %h1 Holly Mehakovic Folio
-        %p A selection of work.
-        %h3 Strategic copy, creative content.
-        %a{ href: 'mailto:hollymehakovic@gmail.com?Subject=Hello%20Holly', target: '_top', class: 'btn btn-dark btn-lg'} Email me
+      - featured, rest = folio.partition(&:featured)
+      - items = mode == :old ? rest : featured
+
+      - if mode == :old
+        %a.jumbotron{ href: 'index.html', style: 'display:block; color:#333; text-decoration:none;' }
+          %h1 Embarrassingly old stuff
+          %p Great work. Questionable web design.
+          %h3 ← Back to selected work
+      - else
+        .jumbotron
+          %h1 Holly Mehakovic Folio
+          %p Five case studies.
+          %h3 Creative Strategist | Senior Brand Copywriter
+          %a{ href: 'mailto:holly@mehakovic.com?Subject=Hello%20Holly', target: '_top', class: 'btn btn-dark btn-lg'} Email me
 
       .hr
 
-      .container
-        - folio.each_slice(4) do |row_array|
+      .folio-grid
+        - items.each_slice(3) do |row_array|
           .row
             - row_array.each do |item|
-              .col-md-3
+              .col-md-4
                 .panel.panel-default.folio-list-item{ 'data-toggle' => 'modal', 'data-target' => "#modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-').gsub('&', '') }" }
                   .panel-heading
                     %b= item.title
@@ -76,11 +96,17 @@
                     .meta
                       %small= "#{ item.category } | #{ item.date }"
 
+        - if mode != :old
+          %a.old-stuff-band{ href: 'old.html' }
+            %h2 Embarrassingly old stuff
+            %p Great work. Questionable web design.
+            %span.cue View the back catalogue →
+
     -# ==========================================================================
     -# Modals
     -# ==========================================================================
 
-    - folio.each do |item|
+    - items.each do |item|
       .modal.fade{ id: "modal-#{ item.title.downcase.gsub(' ', '-').gsub('.', '-').gsub('&', '') }" }
         .modal-dialog
           .modal-content
